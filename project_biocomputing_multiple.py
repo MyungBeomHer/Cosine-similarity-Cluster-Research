@@ -110,38 +110,6 @@ for idx_B, B in enumerate(absolute_value):
             max_cluster_idx = l
     total_cos_res_ans.append([idx_B, max_cluster_idx])
 
-# ------------------------------------------------------------------------------------------------------------#
-# ------------------------------------------------MB----------------------------------------------------------#
-"""
-# def classifier(리스트,분류해주는 레이블의 갯수,최대 cos 유사도,최소 cos 유사도):
-def classifier(total_cos_res, thresh_hold):
-    a = []
-    for i in range(len(total_cos_res)):
-        for j in range(len(thresh_hold) - 1):
-            if thresh_hold[j] <= total_cos_res[i][1] <= thresh_hold[j + 1]:
-                # print(thresh_hold[j],"<=" ,total_cos_res[i][1] ,"<=" ,thresh_hold[j + 1])
-                a.append([i, j + 1])  # ID번호, 레이블 번호
-                break
-    return a
-
-
-# def threshold(최소 cos 유사도값, 레이블의 갯수)
-def threshold(min, label):
-    # 자기 자신 - 최솟 값 / 레이블 갯수로 범위를 지정
-    interval = round((1 - min) / label, 5)
-    thres_hold = [0] * (label + 1)
-
-    for i in range(label):
-        thres_hold[i] = min + interval * i
-    thres_hold[label] = 1.00000
-    return thres_hold
-
-
-label = 10  ##label의 갯수 지정
-thresh_hold_interval = threshold(min, label)
-
-ans = classifier(total_cos_res, thresh_hold_interval)
-"""
 print(*total_cos_res_ans, sep='\n')
 
 with open("project_output.txt", 'w', encoding='cp949') as file:

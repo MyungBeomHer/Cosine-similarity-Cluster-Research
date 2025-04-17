@@ -14,7 +14,7 @@ project_biocomputing_multiple.py
 Project_biocomputing_compare_code.py
 ```
 
-### Model
+### Algorithm
 <p align="center">
   <img src="/figure/model.png" width=100%> <br>
 </p>

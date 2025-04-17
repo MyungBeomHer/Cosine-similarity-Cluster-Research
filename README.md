@@ -1,16 +1,17 @@
-## Speaker Recognition
+## Gene Clustering   
 
-팀원 : [허명범](https://github.com/MyungBeomHer), [김태규]
+팀원 : [허명범](https://github.com/MyungBeomHer), [양지웅], [현승민]
 
-### 프로젝트 주제 (연세대학교 지능형 멀티미디어 시스템 수업)
-화자 인식
+### 프로젝트 주제 (연세대학교 바이오 컴퓨팅 수업)
+Cosine 유사도를 이용한 클러스팅 분류기를 통해 시계열 데이터를 분류
 
 ### 프로젝트 언어 및 환경
 프로젝트 언어 : Pytorch
 
 ### Run 
 ```bash
-Speaker_Recognition.ipynb
+project_biocomputing_multiple.py
+Project_biocomputing_compare_code.py
 ```
 
 ### Model
@@ -70,7 +71,7 @@ for idx_B, B in enumerate(absolute_value):
     total_cos_res_ans.append([idx_B, max_cluster_idx])
      
 ```
-[Speaker_Recognition.ipynb](Speaker_Recognition.ipynb)
+[project_biocomputing_multiple.py](project_biocomputing_multiple.py)
 
 ## Result
 ### Overall Accuracy 
